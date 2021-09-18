@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/panier.css" />
+    <title>Ma commande </title>
+</head>
+<body>
+    <header>
+        <div class="subnav">
+            <button><a href="https://app.360learning.com/">Mon compte</a></button>
+             <a href="panier.html"><img src="./img/shopping-cart.svg" class="panier" alt="panier"/></a>
+
+        </div>
+        <nav> 
+            <a href="index.html"><img class="logo" src="./img/logo1.png" alt="logoformablocs"/></a>
+            <ul>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="conseil.html">Conseil</a></li>
+                <button><a href="devis.html">Demande de devis</a></button>
+            </ul>    
+        </nav>
+    </header>
+ 
+    
+    <section class="panierSection">
+        <h1>Récapitulatif panier</h1>
+    </section>
+    <section class="panierSection2">
+
+        <div class=paniercard>
+           
+                <div class="row articles">
+                    <div>
+                        <h3>
+                            Formateur
+                        </h3>
+                        <small>
+                            Formation complete
+                        </small>
+                    </div>  
+                    <p>25$</p>
+                    <button>
+                        annuler
+                    </button>
+                </div>
+
+                <div class="row articles">
+                    <div>
+                        <h3>
+                            Formateur
+                        </h3>
+                        <small>
+                            Formation complete
+                        </small>
+                    </div>  
+                    <p>25$</p>
+                    <button>
+                        annuler
+                    </button>
+                </div>
+           
+            <p class="price"> Montant total : 150$</p>
+        </div>
+
+        <form class=commandform>
+            <h2>Information de commande</h2>
+            <input type="text" placeholder="Nom*"/>
+            <input type="email" placeholder="Email*"/>
+            <input type="tel" placeholder="N° de téléphone*"/>
+            <input type="number" placeholder="Numéro de carte*"/>
+                <div class="row">
+                    <input type="datetime" placeholder="Date d'expiration*"/>
+                    <input type="number" placeholder="Crytogramme*"/>        
+                </div>
+                <small>*Champs obligatoire</small>
+            <button>Valider la commande</button>
+        </form>
+    </section>    
+    <footer>
+        <div class="firstFooter">
+            <span style="display: flex;align-items: center;">
+                <img src="./img/logo2.png" class="logo" alt="logo forma blocs 2">
+                <p>Accompagnement & apprentissage</p>    
+            </span>
+            <div style="display: flex;align-items:center;">
+                <img style="height: 30px;width: 30px;"src="./img/imac.png" alt="imac">
+                <p>100% à distance</p>
+            </div>
+
+        </div>
+
+        <div class="secondFooter">
+
+            <div class="listFooter">
+                <h3>Contact</h3>
+                <ul>
+                    <li>01 45 25 24 36</li>
+                    <li>Contact@formablocs.com</li>
+                    <li>Suivez nous</li>
+                </ul>
+            </div>
+
+            <div class="listFooter">
+                <h3>Formez vous</h3>
+                <ul>
+                    <li>Formez-vous</li>
+                    <li>Conseil</li>
+                    <li>Demandez de devis</li>
+                </ul>
+            </div>
+ 
+            <div class="listFooter">
+                <h3>Informations</h3>
+                <ul>
+                    <li>Escape-game</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+            <div class="listFooter">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li>Mentions légales</li>
+                    <li>Politique de confidentialité</li>
+                    <li>CGV</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+            <small>
+                © 2021 - Tous droits réservés - Un site conçu par L'équipe 2 Patt'agraph
+            </small>
+            
+
+    </footer>  
+</body>
+</html>

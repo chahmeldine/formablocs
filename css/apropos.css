@@ -1,0 +1,121 @@
+
+.apropos1{
+
+    background-color:#343A59 ;
+    color: white;
+    padding: 100px;
+    padding-left: 50px;
+    padding-right: 50px ;
+    padding-bottom: 0 ;
+
+}
+
+    .apropos1 h2{
+        font-size: 40px;
+    }
+
+    
+    .apropos1 small{
+        color: #D86344;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: right;
+
+    }
+
+    .apropos1 h3{
+        font-size: 30px;
+        color: #01C8A9;
+
+    }
+
+    .apropos1 img{
+
+        width: 500px;
+        min-height: 600px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-top:25px ;
+        margin-left:25px;
+        margin-bottom: -60px;
+    }
+
+    .apropos2{
+        margin-top: 50px;
+        color: #343A59;
+        padding: 100px;
+        padding-left: 50px;
+        padding-right: 50px ;
+        padding-bottom: 0 ;
+    
+    }
+    
+        .apropos2 h2{
+            font-size: 40px;
+        }
+    
+        .apropos2 img{
+    
+            width: 450px;
+            min-height: 450px;
+            object-fit: cover;
+            border-radius: 30px;
+            margin-top:25px ;
+            margin-right:50px;
+        }
+
+    .apropos3{
+        margin-top: 50px;
+        color: #343A59;
+        text-align: center;
+        padding: 50px;  
+    }  
+    
+    .apropos3 h2{
+        font-size: 28px;
+        color: #343A59;
+
+        
+       
+    }
+
+.double2{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.apropostext{
+
+    width: 50%;
+    max-width: 500px;
+}
+
+
+.cardlogo{
+    box-shadow: 3px 3px 10px #00000029;
+    width: 300px;
+    height: 180px;
+    border-radius: 50px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}   
+.cardlogo img{
+    width: 50%;
+
+}
+
+
+.sectionLogo{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}

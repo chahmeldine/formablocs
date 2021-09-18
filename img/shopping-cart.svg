@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.452" height="42.371" viewBox="0 0 44.452 42.371">
+  <g id="shopping-cart" transform="translate(0 -10.67)">
+    <g id="Groupe_3367" data-name="Groupe 3367" transform="translate(28.497 42.661)">
+      <g id="Groupe_3366" data-name="Groupe 3366">
+        <path id="Tracé_5190" data-name="Tracé 5190" d="M297.542,338.862a5.19,5.19,0,1,0,5.19,5.19A5.252,5.252,0,0,0,297.542,338.862Z" transform="translate(-292.352 -338.862)" fill="#343a59"/>
+      </g>
+    </g>
+    <g id="Groupe_3369" data-name="Groupe 3369" transform="translate(0 10.67)">
+      <g id="Groupe_3368" data-name="Groupe 3368">
+        <path id="Tracé_5191" data-name="Tracé 5191" d="M42.821,17.907c-.1,0-.25-.05-.4-.05H10.98l-.5-3.344A4.469,4.469,0,0,0,6.039,10.67H2a2,2,0,1,0,0,3.993H6.039a.531.531,0,0,1,.5.449L9.632,36.173a5.472,5.472,0,0,0,5.39,4.641H35.784a5.546,5.546,0,0,0,5.39-4.392L44.418,20.2A1.973,1.973,0,0,0,42.821,17.907Z" transform="translate(0 -10.67)" fill="#343a59"/>
+      </g>
+    </g>
+    <g id="Groupe_3371" data-name="Groupe 3371" transform="translate(10.827 42.661)">
+      <g id="Groupe_3370" data-name="Groupe 3370">
+        <path id="Tracé_5192" data-name="Tracé 5192" d="M121.2,343.8a5.16,5.16,0,0,0-5.14-4.941,5.22,5.22,0,0,0-4.991,5.39,5.115,5.115,0,0,0,5.091,4.941h.1A5.179,5.179,0,0,0,121.2,343.8Z" transform="translate(-111.07 -338.862)" fill="#343a59"/>
+      </g>
+    </g>
+  </g>
+</svg>
