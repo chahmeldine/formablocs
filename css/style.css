@@ -40,9 +40,9 @@ nav{
 
 }
 
-.logopanier{
+.panier{
     margin-right: 50px;
-    width: 38px;
+    width: 30px;
 }
   .panier:hover{
     color: #01C8A9;
@@ -542,6 +542,11 @@ padding-left: 60px;
 footer{
     margin-top: 10px;
 }
+
+ .footer a {
+     color:white
+ }
+
 
 
 .firstFooter{
