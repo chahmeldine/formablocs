@@ -18,8 +18,235 @@
    
     }
 
+.sectionformateur{
+
+    background-image: url("../img/Groupe\ de\ masques\ 12.png");
+    min-height: 280px;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-left: 50px;
+    padding-top: 100px;
+
+}
+
+.sectionconseiller{
+
+    background-image: url("../img/pédagogique.jpg");
+    min-height: 280px;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-left: 50px;
+    padding-top: 100px;
+
+}
+
+
+.sectionformateur h1{
+    color: #343A59;
+    font-size: 45px;
+    font-weight: 800;
+
+}       
+.sectionformateur h2{
+    font-size: 30px;
+    font-weight:bold;
+
+    color:#01C8A9;
+
+}
+
+
 .sectionformation{
 
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
+.sectionformationinfos span{
+  display: flex;
+  align-items: center;
+}       
+
+.sectionformationinfos span img{
+    margin-right: 10px;
+  }
+.sectionformation2{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+ 
+.sectionformation h2{
+
+    font-size: 30px;
+}
+
+
+.sectionformation3{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+}
+
+    .sectionformation3 h2{
+
+        font-size: 35px;
+        margin-bottom: 10px;
+        color:#343A59;
+        text-align: center;
+    }
+
+ 
+.sectionformationinfos{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+
+
+.sectionformation4{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionformation5{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.sectionformationinfos p {
+    margin: 0;
+}
+
+.imgformation{
+
+    width: 40%;
+    max-width: 550px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 25px;
+}
+
+.Objectiformation{
+    margin: 25px;
+    max-width: 550px;
+}
+
+.Objectiformation h2{
+
+    color: #343A59;
+    font-size: 30px;
+}
+
+.bloccard{
+
+    width: 40%;
+    max-width: 300px;
+    box-shadow: 5px 5px 10px #343B584D;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color:white;
+    text-align: center;
+    border-radius: 30px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin: 30px;
+    margin-top: -50px ;
+}
+
+.bloccard2{
+
+    width: 50%;
+    max-width: 700px;
+    box-shadow: 5px 5px 10px #343B584D;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color:white;
+    text-align: center;
+    border-radius: 30px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-bottom: -150px;
+}
+     
+.bloccard2{
+    font-size: 20px;
+}
+
+.push{
+
+    padding-top: 150px;
+
+}
+
+.dash{
+    padding-bottom: 50px;
+}
+
+.buttonf{
+    margin:20px
+}
+
+.bloccard3{
+
+    width: 50%;
+    max-width: 300px;
+    box-shadow: 5px 5px 10px #343B584D;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color:white;
+    text-align: left;
+    border-radius: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: -100px ;
+}
+
+.bloccard3 h2{
+    font-size: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.bloccard3 p{
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+
+}
+
+ .bloccard3 small{
+     margin-top: 15px;
+ }

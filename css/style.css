@@ -343,10 +343,20 @@ padding-left: 60px;
 
 /* color */
 
-    .claire{
-        background-color: #EDF1FE;
+.textwhite{
+    color:white
+}
 
-    }
+
+.claire{
+    background-color: #EDF1FE;
+
+}
+
+.turquoise{
+    background-color: #01C8A9;
+}
+
 .sblue{
     background-image: url("../img/background-violet.png");
   

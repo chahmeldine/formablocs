@@ -1,6 +1,6 @@
 .sectionvae{
 
- background-image: url("../img/AdobeStock_349670234.jpeg");
+ background-image: url("../img/page-VAE.jpg");
  background-size: cover;
  display: flex;
  justify-content: center;
@@ -71,3 +71,11 @@
         color: white;
         font-size: 25px;
     }
+
+.sectionvae3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
