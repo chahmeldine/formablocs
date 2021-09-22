@@ -12,7 +12,7 @@
     <header>
         <div class="subnav">
             <button><a href="https://app.360learning.com/">Mon compte</a></button>
-             <a href="panier.html"><img src="./img/shopping-cart.svg" class="panier" alt="panier"/></a>
+                <a href="panier.html" class="panier"></a>
 
         </div>
         <nav> 
@@ -30,31 +30,12 @@
     </section>
 
     <section class="sectionformation">
-        <div class="cardformation marine">
-            <h2>Formateur<br>
-                professionnel d’adultes</h2>
-            <p>Financement possible :<br>
-               CPF, Pôle Emploi, OPCO, Entreprises, Transition pro</p>
-            <p>À partir de XXX €</p>
-            <p>Disponible en formation complète, blocs <br>de compétences et VAE</p>
-            <a href="formateur.html"><button>En savoir</button></a>
-        </div>
-        <div class="cardformation orange">
-            <h2>Conseiller
-                en insertion<br>
-                professionnelle</h2>
-            <p>Financement possible :<br>
-               CPF, Pôle Emploi, OPCO, Entreprises, Transition pro</p>
-            <p>À partir de XXX €</p>
-            <p>Disponible en formation complète, blocs <br>de compétences et VAE</p>
-            <a href="conseiller.html"><button>En savoir</button></a>
-        </div>
         <div class="cardformation blue">
             <h2>VAE - validation<br>
                 des acquis de l’expérience</h2>
             <p>Financement possible :<br>
                CPF, Pôle Emploi, OPCO, Entreprises, Transition pro</p>
-            <p>À partir de XXX €</p>
+            <p>À partir de <span class="price-formation"></span></p>
             <p>Disponible en formation complète, blocs <br>de compétences et VAE</p>
             <a href="vae.html"><button>En savoir</button></a>
         </div>
@@ -168,4 +149,9 @@
 
     
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+<script src="./js/api/firebase.js"></script>
+<script src="./js/controllers/formationCtrl.js"></script>
 </html>

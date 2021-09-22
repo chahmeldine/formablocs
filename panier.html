@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/panier.css" />
+        <script src="http://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+        <script src="http://js.stripe.com/v3/"></script>
     <title>Ma commande </title>
 </head>
 <body>
     <header>
         <div class="subnav">
             <button><a href="https://app.360learning.com/">Mon compte</a></button>
-             <a href="panier.html"><img src="./img/shopping-cart.svg" class="panier" alt="panier"/></a>
+            <a href="panier.html" class="panier"></a>
 
         </div>
         <nav> 
@@ -33,38 +35,6 @@
     <section class="panierSection2">
 
         <div class=paniercard>
-           
-                <div class="row articles">
-                    <div>
-                        <h3>
-                            Formateur
-                        </h3>
-                        <small>
-                            Formation complete
-                        </small>
-                    </div>  
-                    <p>25$</p>
-                    <button>
-                        annuler
-                    </button>
-                </div>
-
-                <div class="row articles">
-                    <div>
-                        <h3>
-                            Formateur
-                        </h3>
-                        <small>
-                            Formation complete
-                        </small>
-                    </div>  
-                    <p>25$</p>
-                    <button>
-                        annuler
-                    </button>
-                </div>
-           
-            <p class="price"> Montant total : 150$</p>
         </div>
 
         <form class=commandform>
@@ -72,13 +42,14 @@
             <input type="text" placeholder="Nom*"/>
             <input type="email" placeholder="Email*"/>
             <input type="tel" placeholder="N° de téléphone*"/>
-            <input type="number" placeholder="Numéro de carte*"/>
-                <div class="row">
-                    <input type="datetime" placeholder="Date d'expiration*"/>
-                    <input type="number" placeholder="Crytogramme*"/>        
-                </div>
                 <small>*Champs obligatoire</small>
-            <button>Valider la commande</button>
+                <button class="orange" type="submit" id="estimate-button">Recevoir devis</button>
+
+                <form action="/create-checkout-session" method="POST">
+                    <button type="submit" id="checkout-button">Valider la commande</button>
+                </form>
+
+
         </form>
     </section>    
     <footer>
@@ -141,4 +112,10 @@
 
     </footer>  
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/api/firebase.js"></script>
+<script src="./js/controllers/checkoutCtrl.js"></script>
 </html>

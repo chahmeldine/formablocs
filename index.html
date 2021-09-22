@@ -8,14 +8,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Formablocs</title>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_3EJdjKZ40SX8sX3Gmjeye');
+        })();
+    </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('blocsform').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('blocsform', 'template_mnaxjl8', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>  
+
+<title>Formablocs</title>
 </head>
 <body>
     <!-- header -->
     <header>
         <div class="subnav">
             <button><a href="https://app.360learning.com/">Mon compte</a></button>
-             <a href="panier.html"><img src="./img/shopping-cart.svg" class="panier" alt="panier"/></a>
+            <a href="panier.html" class="panier"></a>
 
         </div>
         <nav> 
@@ -182,26 +211,28 @@
     </section>
 <!-- formulaire -->
     <section class=basic3 >
-        <form class="formsite">
+        <form id="blocsform"class="formsite" method="POST" action="envoi.php">
             <h2>Demande d'informations</h2>
             <p>Je suis intéressé par</p>
-            <select>
-                <option>Demande de devis</option>
-                <option>Prise de rendez-vous</option>
-                <option>Documentation</option>
-                <option>Autre</option>
+            <select name="objectif"id="objectifs">
+                <option value="">Je recherche ..</option>
+                <option value="devis">Demande de devis</option>
+                <option value="rendez-vous">Prise de rendez-vous</option>
+                <option value="documentation">Documentation</option>
+                <option value="autre">Autre</option>
             </select>
-            <input type="text" placeholder="Nom"/>
-            <input type="tel" placeholder="N° de téléphone"/>
-            <input type="email" placeholder="Email"/>
+            <input type="text" placeholder="Nom" name="name"/>
+            <input type="tel" placeholder="N° de téléphone" name="telephone"/>
+            <input type="email" placeholder="Email" name="email"/>
            <textarea name="" id="" cols="30" rows="10">Message</textarea>
             <small>*champs obligatoire</small>
-            <div style="display: flex;">
-           <input type="checkbox" id="horns" name="o">
-           <label for="object">Horns</label>
-            </div>
-         <button class="orange" type="submit">Envoyer</button>
+         <button class="orange" id="formabutton" type="submit">Envoyer</button>
         </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+            emailjs.init('user_3EJdjKZ40SX8sX3Gmjeye')
+        </script>
        </section>
 <!-- footer  -->
        <footer>

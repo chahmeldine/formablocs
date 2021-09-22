@@ -16,7 +16,7 @@
     <header>
         <div class="subnav">
             <button><a href="https://app.360learning.com/">Mon compte</a></button>
-             <a href="panier.html"><img src="./img/shopping-cart.svg" class="panier" alt="panier"/></a>
+                <a href="panier.html" class="panier" ></a>
 
         </div>
         <nav> 
@@ -79,28 +79,8 @@
     </section>
     <div class="sectionformation4 ">
             <div class="sectionformation5">
-            <div class="bloccard marine">
-                <h2>Bloc 1</h2>
-                <p>euros</p>
-                <p>Préparer et animer des actions de formation <br>
-                collectives en intégrant des environnements numériques</p>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="bloccard marine">
-                <h2>Bloc 1</h2>
-                <p>euros</p>
-                <p>Préparer et animer des actions de formation <br>
-                collectives en intégrant des environnements numériques</p>
-                <button>Ajouter au panier</button>
-            </div>
         </div>
-
-        <div class="bloccard2 orange">
-            <h2>Et pour suivre la formation complète ?</h2>
-            <small>Formateur professionnel d’adultes </small>
-             <small>Prix unitaire en €</small>
-            <button class="marine buttonf">Ajouter au panier</button>
-        </div>
+        <div class="complete-formation"></div>
     </div>
     <section class="sectionformation3 push turquoise clean textwhite">
         <h2 class="textwhite">Formation disponible via VAE</h2>
@@ -260,4 +240,9 @@
 
     </footer>  
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+<script src="./js/api/firebase.js"></script>
+<script src="./js/controllers/formateurCtrl.js"></script>
 </html>
