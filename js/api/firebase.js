@@ -157,21 +157,21 @@ fbHelper.getBasketCount = () => {
 fbHelper.getBasketCount();
 
 fbHelper.submitOrder = (nom, email, tel) => {
-  axios
-    .post(
-      "https://formablocs-api.herokuapp.com/create-checkout-session",
-
-      {
-        articles: JSON.parse(localStorage.getItem("basket")),
-        date: firebase.firestore.FieldValue.serverTimestamp(),
-        email,
-        nom,
-        telephone: tel,
-        total: localStorage.getItem("amount"),
-      }
-    )
-    .then((response) => {
-      if (response) {
+  fetch("https://formablocs-api.herokuapp.com/create-checkout-session", {
+    method: "POST",
+    mode: "cors",
+    body: {
+      articles: JSON.parse(localStorage.getItem("basket")),
+      date: firebase.firestore.FieldValue.serverTimestamp(),
+      email,
+      nom,
+      telephone: tel,
+      total: localStorage.getItem("amount"),
+    },
+  })
+    .then((response) => response.json())
+    .then((resp) => {
+      if (resp) {
         db.collection("orders")
           .add({
             articles: JSON.parse(localStorage.getItem("basket")),
