@@ -9,6 +9,15 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
         <script src="https://js.stripe.com/v3/"></script>
     <title>Ma commande </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P9P6JB2XS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5P9P6JB2XS');
+    </script>
 </head>
 <body>
     <header>
@@ -43,7 +52,12 @@
             <input type="email" placeholder="Email*"/>
             <input type="tel" placeholder="N° de téléphone*"/>
                 <small>*Champs obligatoire</small>
-                <button class="orange" type="submit" id="estimate-button">Recevoir devis</button>
+                <a href="devispdf.html">
+
+                        
+                <button class="orange" type="submit" id="estimate-button"><a href="devispdf.html">Générer un devis</a></button></a>
+   
+                    
 
                 <form action="/create-checkout-session" method="POST">
                     <button type="submit" id="checkout-button">Valider la commande</button>
@@ -52,65 +66,75 @@
 
         </form>
     </section>    
-    <footer>
-        <div class="firstFooter">
-            <span style="display: flex;align-items: center;">
-                <img src="./img/logo2.png" class="logo" alt="logo forma blocs 2">
-                <p>Accompagnement & apprentissage</p>    
-            </span>
-            <div style="display: flex;align-items:center;">
-                <img style="height: 30px;width: 30px;"src="./img/imac.png" alt="imac">
-                <p>100% à distance</p>
-            </div>
-
+<footer>
+    <div class="firstFooter">
+        <span style="display: flex;align-items: center;">
+            <img src="./img/logo2.png" class="logo" alt="logo forma blocs 2">
+            <p>Accompagnement & apprentissage</p>
+        </span>
+        <div style="display: flex;align-items:center;">
+            <img style="height: 30px;width: 30px;" src="./img/imac.png" alt="imac">
+            <p>100% à distance</p>
         </div>
 
-        <div class="secondFooter">
+    </div>
 
-            <div class="listFooter">
-                <h3>Contact</h3>
-                <ul>
-                    <li>01 45 25 24 36</li>
-                    <li>Contact@formablocs.com</li>
-                    <li>Suivez nous</li>
-                </ul>
-            </div>
+    <div class="secondFooter">
 
-            <div class="listFooter">
-                <h3>Formez vous</h3>
-                <ul>
-                    <li><a href="formation.html">Formez-vous</a></li>
-                    <li><a href="conseil.html">Conseil</a></li>
-                    <li><a href="devis.html">Demandez de devis</a></li>
-                </ul>
-            </div>
- 
-            <div class="listFooter">
-                <h3>Informations</h3>
-                <ul>
-                    <li>Escape-game</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
+        <div class="listFooter">
+            <h3>Contact</h3>
+            <ul>
+                <li>01 45 25 24 36</li>
+                <li>Contact@formablocs.com</li>
+                <li>Suivez nous</li>
+            </ul>
+        </div>
 
-            <div class="listFooter">
-                <h3>Liens utiles</h3>
-                <ul>
+        <div class="listFooter">
+            <h3>Formez vous</h3>
+            <ul>
+                <a href="formation.html">
+                    <li>Formez-vous</li>
+                </a>
+                <a href="conseil.html">
+                    <li>Conseil</li>
+                </a>
+                <a href="devis.html"></a>
+                <li>Demandez de devis</li></a>
+            </ul>
+        </div>
+
+        <div class="listFooter">
+            <h3>Informations</h3>
+            <ul>
+                <li>Escape-game</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+
+        <div class="listFooter">
+            <h3>Liens utiles</h3>
+            <ul>
+                <a href="mentions.html">
                     <li>Mentions légales</li>
-                    <li>Politique de confidentialité</li>
+                </a>
+                <a href="politique.html"></a>
+                <li> Politique de confidentialité</li></a>
+                <a href="cgv.html">
                     <li>CGV</li>
-                </ul>
-            </div>
-
-
+                </a>
+            </ul>
         </div>
 
-            <small>
-                © 2021 - Tous droits réservés - Un site conçu par L'équipe 2 Patt'agraph
-            </small>
-            
 
-    </footer>  
+    </div>
+
+    <small>
+        © 2021 - Tous droits réservés - Un site conçu par L'équipe 2 Patt'agraph
+    </small>
+
+
+</footer>
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>

@@ -1,19 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="./js/scripts/topdf.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pdf.css" />
+    <title>Télécharger son devis PDF</title>
 </head>
 <body>
     <section id="formainvoice">
-     <h2>Formatblocs devis</h2>
+    <div id="invoicer" class="invoice">
+        <div class="invoic1">
+            <ul>
+                <li style="font-size: 25px;">Formablocs</li>
+                <li>25 rue de Namkes</li>
+                <li>75001</li>
+                <li>Siret:44041451488</li>
+                <li>N° TVA : 46246544</li>
+                <li>Tel : 0145487889</li>
+            </ul>
+
+            <span>
+                <img class="logoinvoice" src="img/logo1.png" alt=""/>
+                <p>Devis</p>
+            </span>
+        </div>
+        <div class="invoic2">
+                <ul>
+                    <li>Nom du client</li>
+                    <li>Adresse</li>
+                    <li>code postale</li>
+                    <li>Email</li>
+                    <li>Téléphone</li>
+                </ul>
+        </div>
+        <div class="invoic3">
+            <p>Date du devis</p>
+        </div>
+        <div class="invoic4">
+            <table class="tableinvoice">
+                <thead>
+                    <tr>
+                        <th> Titre</th>
+                        <th> Tarif</th>
+                        <th> Montant </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Nom de formation</td>
+                        <td> 15</td>
+                        <td> 15</td>
+                    </tr>
+                        <tr>
+                            <td> Nom de formation</td>
+                            <td> 15</td>
+                            <td> 15</td>
+                        </tr>
+                        <tr>
+                            <td> Nom de formation</td>
+                            <td> 15</td>
+                            <td> 15</td>
+                        </tr>
+                        <tr>
+                            <td> Nom de formation</td>
+                            <td> 15</td>
+                            <td> 15</td>
+                        </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                         Total
+                        </td>
+                        <td>
+                        
+                        </td>
+                        <td id="prix total">
+                            150
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <button class="help"onclick="toPdf()">Télécharger</button>
+        <a href="panier.html"><button class="orage" >retour</button></a>
 
     </section>
-    <button onclick="toPdf()">Télécharger</button>
     
 </body>
 </html>

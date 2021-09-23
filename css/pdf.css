@@ -1,0 +1,79 @@
+#formainvoice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.help {
+  margin: 25px;
+}
+.logoinvoice {
+  width: 100px;
+  height: 45px;
+  margin: 15px;
+}
+
+.invoice {
+  background-color: white;
+  width: 720px;
+  padding: 50px;
+  box-shadow: 2px 5px 10px -1px rgba(0, 0, 0, 0.28);
+}
+.invoice ul {
+  padding: 0;
+}
+.invoice ul li {
+  list-style-type: none;
+}
+.invoice span {
+  display: flex;
+  align-items: center;
+}
+.invoice span p {
+  font-size: 45px;
+}
+
+.invoic1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoic2 {
+  display: flex;
+  justify-content: end;
+}
+
+.invoic3 {
+  display: flex;
+  justify-content: start;
+}
+
+.tableinvoice {
+  border-collapse: collapse;
+  min-width: 500px;
+  margin: 50px;
+  border: solid 2px #01c8a9;
+  margin-top: 15px;
+}
+
+caption {
+  margin: 20px;
+}
+
+thead tr {
+  background-color: #01c8a9;
+  color: white;
+  text-align: left;
+}
+th,
+td {
+  padding: 15px 20px;
+}
+
+tbody tr,
+td,
+th {
+  border: solid 1px grey;
+}

@@ -130,11 +130,8 @@ fbHelper.getBasket = (basketCard) => {
             <h3>
                 ${title}
             </h3>
-            <small>
-                Formation complete
-            </small>
         </div>  
-        <p>${price}$</p>
+        <p>${price}€</p>
         <button onclick="fbHelper.removeBasketItem(event)" id="${id}">
             annuler
         </button>

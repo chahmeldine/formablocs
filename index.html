@@ -6,36 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P9P6JB2XS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_3EJdjKZ40SX8sX3Gmjeye');
-        })();
+        gtag('config', 'G-5P9P6JB2XS');
     </script>
 
-
-
-
-
-
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('blocsform').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('blocsform', 'template_mnaxjl8', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>  
 
 <title>Formablocs</title>
 </head>
@@ -53,7 +37,7 @@
                 <li><a href="apropos.html">A propos</a></li>
                 <li><a href="formation.html">Formations</a></li>
                 <li><a href="conseil.html">Conseil</a></li>
-                <button><a href="devis.html">Demande de devis</a></button>
+                <button><a href="devis.html">Nous contacter</a></button>
             </ul>    
         </nav>
     </header>
@@ -67,17 +51,17 @@
 
     <section class="secondbloc">
 
-        <div class="card marine">
+        <div class="card marine animate__animated animate__bounce ">
             <h3>Formation</h3>
             <p>Formations Découvrez nos, formations complètes ou partielles via des blocs de compétences, mais aussi la VAE</p>
             <button><a href="formation.html">En savoir plus</a></button>
         </div>
-        <div class="card blue">
+        <div class="card blue animate__animated animate__bounce ">
             <h3>Conseil</h3>
             <p>Conseil Besoin d'un conseil personnalisé ? Prestations d'accompagnements Tarifs à partir de…€/heure</p>
             <button><a href="conseil.html">En savoir plus</a></button>
         </div>
-        <div class="card orange">
+        <div class="card orange animate__animated animate__bounce ">
             <h3>Financements</h3>
             <p>Financements Découvrez les aides financières : Solutions de financements CPF, Pôle Emploi...</p>
             <button><a href="formation.html">En savoir plus</a></button>
@@ -86,7 +70,7 @@
     </section>
 
 
-    <section class="pourquoibloc" >
+    <section class="pourquoibloc animate__bounceInLeft" >
         <h2>Pourquoi choisir<br> Formablocs ?</h2>
         <div class="pourquoiArgument">
             <div>
@@ -124,7 +108,7 @@
 
             </div>
 
-            <div class="card2 marine">
+            <div class="card2 marine animate__bounceIn animate__delay-4s">
                 <h3>Avantages</h3>
                 <p>
                 The leap into electronic typesetting, with recently with desktop publishing software standard dummy text ever since the 1500s, when an unknown inter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
@@ -133,7 +117,7 @@
                     En savoir plus
                 </button>
             </div>
-            <div class="card2 orange" >
+            <div class="card2 orange animate__bounceIn animate__delay-4s" >
                 <h3>Methode de financements</h3>
                 <p>
                 The leap into electronic typesetting, with recently with desktop publishing software standard dummy text ever since the 1500s, when an unknown inter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
@@ -235,21 +219,21 @@
         </script>
        </section>
 <!-- footer  -->
-       <footer>
+    <footer>
         <div class="firstFooter">
             <span style="display: flex;align-items: center;">
                 <img src="./img/logo2.png" class="logo" alt="logo forma blocs 2">
-                <p>Accompagnement & apprentissage</p>    
+                <p>Accompagnement & apprentissage</p>
             </span>
             <div style="display: flex;align-items:center;">
-                <img style="height: 30px;width: 30px;"src="./img/imac.png" alt="imac">
+                <img style="height: 30px;width: 30px;" src="./img/imac.png" alt="imac">
                 <p>100% à distance</p>
             </div>
-
+    
         </div>
-
+    
         <div class="secondFooter">
-
+    
             <div class="listFooter">
                 <h3>Contact</h3>
                 <ul>
@@ -258,16 +242,21 @@
                     <li>Suivez nous</li>
                 </ul>
             </div>
-
+    
             <div class="listFooter">
                 <h3>Formez vous</h3>
                 <ul>
-                    <li><a href="formation.html">Formez-vous</a></li>
-                    <li><a href="conseil.html">Conseil</a></li>
-                    <li><a href="devis.html">Demandez de devis</a></li>
+                    <a href="formation.html">
+                        <li>Formez-vous</li>
+                    </a>
+                    <a href="conseil.html">
+                        <li>Conseil</li>
+                    </a>
+                    <a href="devis.html"></a>
+                    <li>Demandez de devis</li></a>
                 </ul>
             </div>
- 
+    
             <div class="listFooter">
                 <h3>Informations</h3>
                 <ul>
@@ -275,25 +264,30 @@
                     <li>FAQ</li>
                 </ul>
             </div>
-
+    
             <div class="listFooter">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li>Mentions légales</li>
-                    <li>Politique de confidentialité</li>
-                    <li>CGV</li>
+                    <a href="mentions.html">
+                        <li>Mentions légales</li>
+                    </a>
+                    <a href="politique.html"></a>
+                    <li> Politique de confidentialité</li></a>
+                    <a href="cgv.html">
+                        <li>CGV</li>
+                    </a>
                 </ul>
             </div>
-
-
+    
+    
         </div>
-
-            <small>
-                © 2021 - Tous droits réservés - Un site conçu par L'équipe 2 Patt'agraph
-            </small>
-            
-
-    </footer>  
+    
+        <small>
+            © 2021 - Tous droits réservés - Un site conçu par L'équipe 2 Patt'agraph
+        </small>
+    
+    
+    </footer>
 
 </body>
 </html>

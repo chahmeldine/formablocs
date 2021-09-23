@@ -22,6 +22,7 @@ nav {
   box-shadow: 7px 7px 6px #0000003e;
   top: 72px;
   position: fixed;
+  z-index: 9999999999999;
 }
 
 nav a {
@@ -68,6 +69,7 @@ nav a:hover {
   top: 0px;
   position: fixed;
   border-bottom: solid 2px #e8e8e8;
+  z-index: 9999999999999;
 }
 
 .subnav button {
@@ -319,6 +321,10 @@ button {
 }
 
 /* color */
+
+.texturquoise {
+  color: #01c8a9;
+}
 
 .textwhite {
   color: white;
