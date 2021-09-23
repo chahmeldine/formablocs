@@ -151,7 +151,9 @@ fbHelper.getBasketCount = () => {
   }
 };
 
-fbHelper.getBasketCount();
+if (location.pathname !== "/devispdf.html") {
+  fbHelper.getBasketCount();
+}
 
 fbHelper.submitOrder = (nom, email, tel) => {
   axios
@@ -190,8 +192,10 @@ fbHelper.submitOrder = (nom, email, tel) => {
     });
 };
 
-fbHelper.submitEstimate = (email, nom, tel) => {
-  db.collection("orders")
+fbHelper.submitEstimate = (nom, email, tel) => {
+  db.collection("users")
+    .doc(email)
+    .collection("invoices")
     .add({
       articles: JSON.parse(localStorage.getItem("basket")),
       date: firebase.firestore.FieldValue.serverTimestamp(),
@@ -201,30 +205,76 @@ fbHelper.submitEstimate = (email, nom, tel) => {
       total: localStorage.getItem("amount"),
     })
     .then((docRef) => {
-      db.collection("orders").doc(docRef.id).update({
-        referenceNumber: docRef.id,
-      });
+      console.log(docRef.id);
+      db.collection("users")
+        .doc(email)
+        .collection("invoices")
+        .doc(docRef.id)
+        .update({
+          referenceNumber: docRef.id,
+        });
+      localStorage.setItem(
+        "currentUser",
+        JSON.stringify({ invoiceId: docRef.id, email })
+      );
+      location.pathname = "/devispdf.html";
     })
     .catch((error) => {
       console.error("Error writing document:", error);
     });
 };
 
-fbHelper.getOrders = () => {
-  db.collection("orders")
+fbHelper.getInvoice = (email, invoiceId, tbodyContainer, clientInfo) => {
+  db.collection("users")
+    .doc(email)
+    .collection("invoices")
+    .doc(invoiceId)
     .get()
     .then((querySnapshot) => {
-      querySnapshot.forEach((item) => {
-        const {
-          articles,
-          date,
-          email,
-          nom,
-          prenom,
-          referenceNumber,
-          total,
-          telephone,
-        } = item.data();
+      const {
+        articles,
+        date,
+        email,
+        nom,
+        prenom,
+        referenceNumber,
+        total,
+        telephone,
+      } = querySnapshot.data();
+
+      dateInvoice.innerHTML = `<p>Date du devis: ${dayjs(date.toDate())
+        .locale("fr")
+        .format("DD MMM YYYY")}</p>`;
+      dateInvoice.insertAdjacentHTML(
+        "beforeend",
+        `<p>Numéro de réference: ${referenceNumber}</p>`
+      );
+
+      clientInfo.innerHTML = `            <ul>
+                    <li>${nom}</li>
+                    <li>${email}</li>
+                    <li>${telephone}</li>
+                </ul>`;
+
+      articles.map(({ id, price, title }) => {
+        tbodyContainer.innerHTML += `      
+                        <tr id="${id}">
+                            <td>${title}</td>
+                            <td>${price}</td>
+                            <td>${price}</td>
+                        </tr>`;
       });
+      tbodyContainer.insertAdjacentHTML(
+        "beforeend",
+        `              <tr>
+                        <td colspan="2">
+                         Total
+                        </td>
+           
+                        <td id="prix total">
+                            ${total}
+                        </td>
+                    </tr>`
+      );
     });
 };

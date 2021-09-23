@@ -29,16 +29,9 @@
             </span>
         </div>
         <div class="invoic2">
-                <ul>
-                    <li>Nom du client</li>
-                    <li>Adresse</li>
-                    <li>code postale</li>
-                    <li>Email</li>
-                    <li>Téléphone</li>
-                </ul>
+    
         </div>
         <div class="invoic3">
-            <p>Date du devis</p>
         </div>
         <div class="invoic4">
             <table class="tableinvoice">
@@ -49,40 +42,7 @@
                         <th> Montant </th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td> Nom de formation</td>
-                        <td> 15</td>
-                        <td> 15</td>
-                    </tr>
-                        <tr>
-                            <td> Nom de formation</td>
-                            <td> 15</td>
-                            <td> 15</td>
-                        </tr>
-                        <tr>
-                            <td> Nom de formation</td>
-                            <td> 15</td>
-                            <td> 15</td>
-                        </tr>
-                        <tr>
-                            <td> Nom de formation</td>
-                            <td> 15</td>
-                            <td> 15</td>
-                        </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                         Total
-                        </td>
-                        <td>
-                        
-                        </td>
-                        <td id="prix total">
-                            150
-                        </td>
-                    </tr>
+                <tbody id="invoice-body">              
                 </tbody>
             </table>
         </div>
@@ -93,4 +53,11 @@
     </section>
     
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="https://unpkg.com/browse/dayjs@1.8.21/locale/fr.js"></script>
+<script src="./js/api/firebase.js"></script>
+<script src="./js/controllers/invoiceCtrl.js"></script>
 </html>
