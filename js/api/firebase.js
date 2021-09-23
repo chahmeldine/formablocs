@@ -168,11 +168,6 @@ fbHelper.submitOrder = (nom, email, tel) => {
         nom,
         telephone: tel,
         total: localStorage.getItem("amount"),
-      },
-      {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
       }
     )
     .then((response) => {
