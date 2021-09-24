@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P9P6JB2XS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5P9P6JB2XS');
+    </script>
+
+
+    <title>Nous contacter</title>
 </head>
 <body>
+    <!-- header -->
+    <header>
+        <div class="subnav">
+            <button><a href="https://app.360learning.com/">Mon compte</a></button>
+            <a href="panier.html" class="panier"></a>
+    
+        </div>
+        <nav>
+            <a href="index.html"><img class="logo" src="./img/logo1.png" alt="logoformablocs" /></a>
+            <ul>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="conseil.html">Conseil</a></li>
+                <button><a href="devis.html">Nous contacter</a></button>
+            </ul>
+        </nav>
+    </header>
+    <!-- formulaire -->
+    <section class=basic3>
+        <form id="blocsform" class="formsite" method="POST" action="envoi.php">
+            <h2>Demande d'informations</h2>
+            <p>Je suis intéressé par</p>
+            <select name="objectif" id="objectifs">
+                <option value="">Je recherche ..</option>
+                <option value="devis">Demande de devis</option>
+                <option value="rendez-vous">Prise de rendez-vous</option>
+                <option value="documentation">Documentation</option>
+                <option value="autre">Autre</option>
+            </select>
+            <input type="text" placeholder="Nom" name="name" />
+            <input type="tel" placeholder="N° de téléphone" name="telephone" />
+            <input type="email" placeholder="Email" name="email" />
+            <textarea name="" id="" cols="30" rows="10">Message</textarea>
+            <small>*champs obligatoire</small>
+            <button class="orange" id="formabutton" type="submit">Envoyer</button>
+        </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
+        <script type="text/javascript">
+            emailjs.init('user_3EJdjKZ40SX8sX3Gmjeye')
+        </script>
+    </section>
+
+
     <footer>
         <div class="firstFooter">
             <span style="display: flex;align-items: center;">
