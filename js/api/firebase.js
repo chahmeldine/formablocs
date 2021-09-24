@@ -60,14 +60,23 @@ fbHelper.getBlocs = async (sections, id) => {
         id: b.id,
         title,
         price,
-        reference: { id: refFormation.id, data: ref },
+        reference: {
+          id: refFormation.id,
+          data: {
+            price: ref.price,
+            title: ref.title,
+          },
+        },
       };
-
       sections.innerHTML += `
               <div class="bloccard marine">
               <h2>${title}</h2>
               <p>${price}euros</p>
-              <button onclick="fbHelper.addBasket(event)" id='${item}'>Ajouter au panier</button>
+              <p>Préparer et animer des actions de formation <br>
+              collectives en intégrant des environnements numériques</p>
+              <button onclick="fbHelper.addBasket(event)" id='${JSON.stringify(
+                item
+              )}'>Ajouter au panier</button>
           </div>`;
     }
   });
@@ -76,12 +85,15 @@ fbHelper.getBlocs = async (sections, id) => {
 
   queryFormations.forEach((form) => {
     if (form.id === id) {
-      const formItem = { id: form.id, ...form.data() };
+      const { title, price } = form.data();
+      const formItem = { id: form.id, title, price };
       orangeBlock.innerHTML = `<div class="bloccard2 orange">
             <h2>Et pour suivre la formation complète ?</h2>
             <small>${form.data().title} </small>
             <small>Prix unitaire en ${form.data().price}€</small>
-            <button class="marine buttonf" onclick="fbHelper.addBasket(event)" id='${formItem}'>Ajouter au panier</button>
+            <button class="marine buttonf" onclick="fbHelper.addBasket(event)" id='${JSON.stringify(
+              formItem
+            )}'>Ajouter au panier</button>
         </div>`;
     }
   });
@@ -89,7 +101,8 @@ fbHelper.getBlocs = async (sections, id) => {
 
 fbHelper.addBasket = (event) => {
   const basket = JSON.parse(localStorage.getItem("basket"));
-  const item = JSON.stringify(event.target.id);
+  const item = JSON.parse(event.target.id);
+  console.log(item);
   const index = basket.findIndex((el) => el.id === item.id);
   if (index >= 0) {
     basket.filter((el) => el.id !== item.id);
