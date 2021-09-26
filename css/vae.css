@@ -1,81 +1,88 @@
-.sectionvae{
-
- background-image: url("../img/page-VAE.jpg");
- background-size: cover;
- display: flex;
- justify-content: center;
- padding-top: 25px;
- padding-bottom: 25px;
- min-height: 500px;
-
-
+.sectionvae {
+  background-image: url("../img/page-VAE.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  min-height: 500px;
 }
-    .sectionvae h1{
+.sectionvae h1 {
+  text-align: center;
+  color: #343a59;
+  font-size: 45px;
+}
+.vaedefinition {
+  background-color: #01c8a9;
+  color: white;
+  max-width: 500px;
+  padding: 50px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 5px 5px 10px #343b584d;
+  margin-top: -200px;
+}
 
-        text-align: center;
-        color: #343A59;
-        font-size: 45px;
-    }
-.vaedefinition{
+.sectionvae2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
 
-    background-color: #01C8A9;
-    color: white;
-    max-width: 500px;
-    padding:50px;
-    border-radius: 50px;
+.sectionvae3 {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionvae3 h2 {
+  font-size: 30px;
+  color: #343a59;
+}
+
+.cardvae {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  border: solid 1px white;
+  width: 30%;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+.cardvae button {
+  max-width: 200px;
+}
+
+.cardvae small {
+  margin: 20px;
+}
+.cardvae h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.sectionvae3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  .sectionvae3 img {
+    width: 100%;
+  }
+
+  .cardvae {
+    width: 50%;
+  }
+
+  .sectionvae3 h2 {
     text-align: center;
-    box-shadow: 5px 5px 10px #343B584D;
-    margin-top: -200px;
-}
-
-
-.sectionvae2{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-
-.sectionvae3{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}   
-    .sectionvae3 h2{
-       font-size: 30px;
-       color: #343A59;
-    }
-
-.cardvae{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px;
-    border: solid 1px white;
-    width: 30%;
-    border-radius: 40px;
-    text-align: center;
-    color: white;
-    margin: 20px;
-}
-    .cardvae button{
-       max-width: 200px;
-    }
-
-    .cardvae small{
-        margin: 20px;
-    }
-    .cardvae h2{
-        color: white;
-        font-size: 25px;
-    }
-
-.sectionvae3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+  }
 }

@@ -30,7 +30,7 @@ fbHelper.getFormations = (section) => {
       });
       formations.forEach((item, idx) => {
         section.innerHTML += `
-        <div class="cardformation marine">
+        <div class="cardformation marine animate__animated animate__bounce">
         <h2>${item.data().title}</h2>
         <p>Financement possible :<br>
            CPF, Pôle Emploi, OPCO, Entreprises, Transition pro</p>
@@ -69,7 +69,7 @@ fbHelper.getBlocs = async (sections, id) => {
         },
       };
       sections.innerHTML += `
-              <div class="bloccard marine">
+              <div class="bloccard marine animate__animated animate__bounce">
               <h2>${title}</h2>
               <p>${price}euros</p>
               <p>Préparer et animer des actions de formation <br>
@@ -87,7 +87,7 @@ fbHelper.getBlocs = async (sections, id) => {
     if (form.id === id) {
       const { title, price } = form.data();
       const formItem = { id: form.id, title, price };
-      orangeBlock.innerHTML = `<div class="bloccard2 orange">
+      orangeBlock.innerHTML = `<div class="bloccard2 orange animate__animated animate__bounce">
             <h2>Et pour suivre la formation complète ?</h2>
             <small>${form.data().title} </small>
             <small>Prix unitaire en ${form.data().price}€</small>

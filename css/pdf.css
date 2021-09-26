@@ -60,10 +60,6 @@
   margin-top: 15px;
 }
 
-caption {
-  margin: 20px;
-}
-
 thead tr {
   background-color: #01c8a9;
   color: white;
@@ -78,4 +74,27 @@ tbody tr,
 td,
 th {
   border: solid 1px grey;
+}
+
+@media (max-width: 450px) {
+  table {
+    max-width: 200px;
+  }
+  .invoice {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tableinvoice {
+    max-width: 200px;
+  }
+
+  th,
+  td {
+    padding: 15px 0px;
+  }
+
+  .ivoice4 {
+    max-width: 200px;
+  }
 }

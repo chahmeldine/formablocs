@@ -1,139 +1,139 @@
-
-.conseilsection{
-
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 60px;
-    text-align: center;
-    background-image: url("../img/header-conseil.jpg");
-    background-size: cover;
-    background-position: 35% 40%;
-    margin-bottom: -120px;
-    
-    }
-        .conseilsection h1{
-            text-align: center;
-            color: #343A59;
-            font-size: 45px;
-            font-weight:700;
-            margin-bottom: 0;
-            }
-            
-
-
-
-
-
-
-.cardConseil{
- width: 250px;
- padding: 15px;
- border-radius: 40px;
- flex-direction: column ;
- display: flex;
- align-items: center;
- justify-content: space-evenly;
- margin: 20px;
- color: white;
- box-shadow: 5px 5px 10px #343B584D;
+.conseilsection {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  text-align: center;
+  background-image: url("../img/header-conseil.jpg");
+  background-size: cover;
+  background-position: 35% 40%;
+  margin-bottom: -120px;
 }
-.conseilapartir span{
-    background-color: #20C7A9;
-    border-radius: 30px;
-    padding: 25px;
-    color: white;
-    text-align: center;
-}   
-.conseilapartir span p{
-    margin-top: 0;
+.conseilsection h1 {
+  text-align: center;
+  color: #343a59;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
+.cardConseil {
+  width: 250px;
+  padding: 15px;
+  border-radius: 40px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  color: white;
+  box-shadow: 5px 5px 10px #343b584d;
+}
+.conseilapartir span {
+  background-color: #20c7a9;
+  border-radius: 30px;
+  padding: 25px;
+  color: white;
+  text-align: center;
+}
+.conseilapartir span p {
+  margin-top: 0;
+}
 
 .cardConseil p {
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-
-   
-   }
-
-   .cardConseil h2{
-    font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 0;
-
-   
-   }
-
-.conseilapartir{
-    display: flex;
-    justify-content: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-    .conseilapartir p {
-        margin-top: 10px;
-        max-width: 500px;
-    }
-
-.prestation{
-
-    display: flex;
-    text-align: center;
-    width: 100%;
+.cardConseil h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
 }
 
-    .prestation {
-
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .prestations {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-self: center;
-        width: 70%;
-    }
-
-    .prestation h2{
-        color:#343A59;
-        font-size: 30px;
-    }
-
-.cardPrestation{
- width: 300px;
- height: 200px;
- padding: 15px;
- background-color: #E1E1E1;
- border-radius: 40px;
- flex-direction: column ;
- display: flex;
- align-items: center;
- justify-content: center;
- margin: 20px;
-color: white;
+.conseilapartir {
+  display: flex;
+  justify-content: center;
 }
 
+.conseilapartir p {
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+.prestation {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.prestation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.prestations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  width: 70%;
+}
+
+.prestation h2 {
+  color: #343a59;
+  font-size: 30px;
+}
+
+.cardPrestation {
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: white;
+}
 
 .orange {
-    background-color: tomato 
+  background-color: tomato;
 }
 
-.digitalisation{
-
-    background-image: url("../img/digitalisation-formation.jpg");
-    background-size: cover;
+.digitalisation {
+  background-image: url("../img/digitalisation-formation.jpg");
+  background-size: cover;
 }
 
-.rncp{
+.rncp {
+  background-image: url("../img/reconversion.jpg");
+}
 
-    background-image: url("../img/reconversion.jpg");
+@media (max-width: 450px) {
+  /* header {
+    display: none;
+  } */
+
+  .conseilsection {
+    padding-left: 0;
+  }
+
+  .conseilapartir {
+    flex-wrap: wrap;
+  }
+  .conseilapartir span {
+    width: 80%;
+  }
+  .cardConseil {
+    height: 200px;
+  }
 }

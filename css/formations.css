@@ -218,3 +218,54 @@
 .bloccard3 small {
   margin-top: 15px;
 }
+
+@media (max-width: 450px) {
+  .sectionformateur {
+    padding: 0;
+  }
+  .sectionformateur h1 {
+    text-align: center;
+  }
+
+  .sectionformationinfos {
+    width: 100%;
+    margin: 0;
+  }
+  .sectionformation {
+    flex-wrap: wrap;
+  }
+
+  .bloccard3 {
+    margin-top: 100px;
+  }
+
+  .sectionformation5 {
+    flex-wrap: wrap;
+  }
+
+  .bloccard {
+    margin-top: 30px;
+  }
+
+  .bloccard2 {
+    margin-bottom: 50px;
+    width: 85%;
+    margin: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .sectionformation3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .sectionformation2 {
+    margin-top: 250px;
+    flex-wrap: wrap;
+  }
+
+  .imgformation {
+    width: 90%;
+  }
+}

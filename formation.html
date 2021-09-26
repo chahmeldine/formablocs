@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/formations.css" />
-    <title>Formations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Formations pour adultes en ligne </title>
 </head>
 <body>
     <header>
@@ -30,7 +32,7 @@
     </section>
 
     <section class="sectionformation">
-        <div class="cardformation blue">
+        <div class="cardformation blue animate__animated animate__bounce">
             <h2>VAE - validation<br>
                 des acquis de l’expérience</h2>
             <p>Financement possible :<br>
@@ -154,4 +156,16 @@
 <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
 <script src="./js/api/firebase.js"></script>
 <script src="./js/controllers/formationCtrl.js"></script>
+<script>
+    window.axeptioSettings = {
+        clientId: "61505d8cf9f81431fabfa088",
+        cookiesVersion: "https://formablocs/-base",
+    };
+
+    (function (d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+    })(document, "script");
+</script>
 </html>
