@@ -568,64 +568,54 @@ footer small {
   background-color: #343a59;
 }
 
-@media (max-width: 450px) {
-  /* header {
-    display: none;
-  } */
-
-  body {
-    width: 100%;
-    margin: 0;
-    padding-right: 0;
+@media (max-width: 600px) {
+  .logo {
+    width: 25px;
+    margin-right: 0;
   }
-}
 
-.logo {
-  width: 25px;
-  margin-right: 0;
-}
+  .doublecard {
+    height: 350px;
+    width: 90%;
+  }
 
-.doublecard {
-  height: 350px;
-  width: 90%;
-}
+  footer {
+    width: 100%;
+  }
 
-footer {
-  width: 100%;
-}
+  .card {
+    margin-top: 20px;
+  }
 
-.card {
-  margin-top: 20px;
-}
+  .firstFooter {
+    display: none;
+  }
 
-.firstFooter {
-  display: none;
-}
+  .firstbloc {
+    padding-left: 0;
+    padding-top: 50px;
+    min-height: auto;
+  }
 
-.firstbloc {
-  padding-left: 0;
-  padding-top: 50px;
-  min-height: auto;
-}
+  .tleft {
+    width: 80%;
+  }
 
-.tleft {
-  width: 80%;
-}
+  .card2 {
+    width: 80%;
+  }
 
-.card2 {
-  width: 80%;
-}
+  .formsite {
+    margin: 20px;
+  }
 
-.formsite {
-  margin: 20px;
-}
+  .doublecard {
+    width: 90%;
+    margin: 20px;
+    margin-top: 50px;
+  }
 
-.doublecard {
-  width: 90%;
-  margin: 20px;
-  margin-top: 50px;
-}
-
-footer small {
-  text-align: center;
+  footer small {
+    text-align: center;
+  }
 }
