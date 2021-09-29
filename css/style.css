@@ -65,7 +65,7 @@ nav a:hover {
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   top: 0px;
   position: fixed;
@@ -75,6 +75,25 @@ nav a:hover {
 
 .subnav button {
   margin: 20px;
+}
+.subnav span {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.subnav input {
+  padding: 10px;
+  padding-left: 25px;
+  color: #aec3ff;
+  border: solid 1px #aec3ff;
+  outline: none;
+  border-radius: 100px;
+}
+
+.subnav img {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 button {

@@ -114,6 +114,35 @@
   background-size: cover;
 }
 
+.ingefinance {
+  background-image: url("../img/ingérieuriefinancière.jpg");
+}
+
+.reconversion {
+  background-image: url("../img/reconversionc.jpg");
+}
+
+.ingepeda {
+  background-image: url("../img/ingepeda.jpg");
+}
+
+.acompagnement {
+  background-image: url("../img/accompagner.jpg");
+}
+
+.bilan {
+  background-image: url("../img/bilan.jpg");
+}
+
+.alternant {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45))
+    url("../img/alternant.jpg");
+}
+
+.qualiopi {
+  background-image: url("../img/qualiopi.jpg");
+}
+
 .rncp {
   background-image: url("../img/reconversion.jpg");
 }
