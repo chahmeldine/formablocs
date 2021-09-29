@@ -1,0 +1,14 @@
+.devisSection {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/men.jpg");
+  background-size: cover;
+  font-size: 35px;
+  color: #343a59;
+}
+
+.uppy {
+  margin-top: -100px;
+}
