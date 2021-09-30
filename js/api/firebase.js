@@ -34,7 +34,7 @@ fbHelper.getFormations = (section) => {
         <h2>${item.data().title}</h2>
         <p>Financement possible :<br>
            CPF, Pôle Emploi, OPCO, Entreprises, Transition pro</p>
-        <p>À partir de ${item.data().price}</p>
+        <p>À partir de ${item.data().price}€</p>
         <p>Disponible en formation complète, blocs <br>de compétences et VAE</p>
         <a href="/formateur.html"><button onclick="fbHelper.setItemId(event)" id=${
           item.id
@@ -71,7 +71,7 @@ fbHelper.getBlocs = async (sections, id) => {
       sections.innerHTML += `
               <div class="bloccard marine animate__animated animate__bounce">
               <h2>${title}</h2>
-              <p>${price}euros</p>
+              <p>${price}€</p>
               <p>Préparer et animer des actions de formation <br>
               collectives en intégrant des environnements numériques</p>
               <button onclick="fbHelper.addBasket(event)" id='${JSON.stringify(
@@ -267,8 +267,8 @@ fbHelper.getInvoice = (email, invoiceId, tbodyContainer, clientInfo) => {
         tbodyContainer.innerHTML += `      
                         <tr id="${id}">
                             <td>${title}</td>
-                            <td>${price}</td>
-                            <td>${price}</td>
+                            <td>${price}€</td>
+                            <td>${price}€</td>
                         </tr>`;
       });
       tbodyContainer.insertAdjacentHTML(
@@ -279,7 +279,7 @@ fbHelper.getInvoice = (email, invoiceId, tbodyContainer, clientInfo) => {
                         </td>
            
                         <td id="prix total">
-                            ${total}
+                            ${total}€
                         </td>
                     </tr>`
       );
