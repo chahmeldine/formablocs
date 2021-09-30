@@ -12,30 +12,69 @@
 </head>
 <body>
    <!-- header -->
-    <header>
-        <div class="subnav">
-            <div style="display: flex; align-items: center;">
-                <span><img src="./img/phone.jpg" alt="mail" /> +336 6 45 77 88 58 66</span>
-                <span><img src="./img/mail (1).jpg" alt="mail" /> Contact@formablocs.fr</span>
-            </div>
-    
-            <input placeholder="Rechercher" type="search" />
-    
-            <div style="display: flex; align-items: center;">
-                <button><a href="https://app.360learning.com/">Mon compte</a></button>
-                <a href="panier.html" class="panier"></a>
-            </div>
+<header>
+    <div class="subnav">
+        <div style="display: flex; align-items: center;">
+            <span><img src="./img/phone.jpg" alt="mail" /> +336 6 45 77 88 58 66</span>
+            <span><img src="./img/mail (1).jpg" alt="mail" /> Contact@formablocs.fr</span>
         </div>
-        <nav>
-            <a href="index.html"><img class="logo" src="./img/logo1.png" alt="logoformablocs" /></a>
-            <ul>
-                <li><a href="apropos.html">A propos</a></li>
-                <li><a href="formation.html" class="texturquoise">Formations</a></li>
-                <li><a href="conseil.html">Conseil</a></li>
-                <button><a href="devis.html">Nous contacter</a></button>
+
+        <input placeholder="Rechercher" type="search" />
+
+        <div style="display: flex; align-items: center;">
+            <button><a href="https://app.360learning.com/">Mon compte</a></button>
+            <a href="panier.html" class="panier"></a>
+        </div>
+    </div>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+                <a href="apropos.html">
+                    <li>A propos</li>
+                </a>
+                <a href="formation.html">
+                    <li>Formations</li>
+                </a>
+                <a href="conseil.html">
+                    <li>Conseil</li>
+                </a>
+                <a href="devis.html">
+                    <li>Nous contacter</li>
+                </a>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
+    <nav id="formanav">
+        <a href="index.html"><img class="logo" src="./img/logo1.png" alt="logoformablocs" /></a>
+        <ul>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="formation.html">Formations</a></li>
+            <li><a href="conseil.html">Conseil</a></li>
+            <button><a href="devis.html">Nous contacter</a></button>
+        </ul>
+    </nav>
+</header>
 
     <section class=sectionf1>
         <h1>Nos formations</h1>

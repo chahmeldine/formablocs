@@ -37,7 +37,46 @@
             <a href="panier.html" class="panier"></a>
         </div>
     </div>
-    <nav>
+<nav role="navigation">
+    <div id="menuToggle">
+        <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+        <input type="checkbox" />
+
+        <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+        <ul id="menu">
+            <a href="apropos.html">                
+                <li>A propos</li>
+            </a>
+            <a href="formation.html">
+                <li>Formations</li>
+            </a>
+            <a href="conseil.html">
+                <li>Conseil</li>
+            </a>
+            <a href="devis.html">
+                <li>Nous contacter</li>
+            </a>
+        </ul>
+    </div>
+</nav>
+
+    <nav id="formanav">
         <a href="index.html"><img class="logo" src="./img/logo1.png" alt="logoformablocs" /></a>
         <ul>
             <li><a href="apropos.html">A propos</a></li>
@@ -200,20 +239,20 @@
     </section>
 <!-- formulaire -->
     <section class=basic3 >
-        <form id="blocsform"class="formsite" method="POST" action="envoi.php">
+        <form id="blocsform"class="formsite">
             <h2>Demande d'informations</h2>
             <p>Je suis intéressé par</p>
-            <select name="objectif"id="objectifs">
+            <select id="" name="objectif"id="objectifs">
                 <option value="">Je recherche ..</option>
                 <option value="devis">Demande de devis</option>
                 <option value="rendez-vous">Prise de rendez-vous</option>
                 <option value="documentation">Documentation</option>
                 <option value="autre">Autre</option>
             </select>
-            <input type="text" placeholder="Nom" name="name"/>
-            <input type="tel" placeholder="N° de téléphone" name="telephone"/>
-            <input type="email" placeholder="Email" name="email"/>
-           <textarea name="" id="" cols="30" rows="10">Message</textarea>
+            <input id="name_form" type="text" placeholder="Nom" name="name"/>
+            <input id="phone_form" type="tel" placeholder="N° de téléphone" name="telephone"/>
+            <input id="mail_form" type="email" placeholder="Email" name="email"/>
+           <textarea id="message_form" name="" id="" cols="30" rows="10">Message</textarea>
             <small>*champs obligatoire</small>
          <button class="orange" id="formabutton" type="submit">Envoyer</button>
         </form>
@@ -222,6 +261,7 @@
         <script type="text/javascript">
             emailjs.init('user_3EJdjKZ40SX8sX3Gmjeye')
         </script>
+        <script src="js/scripts/mail.js"></script>
        </section>
 <!-- footer  -->
     <footer>
